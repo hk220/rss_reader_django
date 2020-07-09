@@ -4,7 +4,7 @@ import inject
 from .entities import Item
 from .repository_interfaces import RSSRepositoryInterface
 
-class RSSItemApplicationService:
+class RSSApplicationService:
     rss_repository: RSSRepositoryInterface = inject.attr(RSSRepositoryInterface)
 
     def get_all_items(self, feed_url: str) -> List[Item]:

@@ -1,6 +1,6 @@
 {% for item in feed_items %}
 <div>
-    <p>title: <a href="{{ item.link }}">{{ item.title }}</a></p>
-    <p>updated: {{ item.updated }}</p>
+    <p><a href="{{ item.link }}">{{ item.title }}</a> {{ item.updated }}</p>
+    <p>{{ item.summary }}</p>
 </div>
 {% endfor %}

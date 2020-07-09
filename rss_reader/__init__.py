@@ -1,5 +1,5 @@
 import inject
-from .repositories import RSSRepository, RSSTestRepository
+from .repositories import RSSRepository
 from .repository_interfaces import RSSRepositoryInterface
 
 
