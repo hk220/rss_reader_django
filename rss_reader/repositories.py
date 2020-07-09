@@ -3,7 +3,7 @@ from .entities import Item
 from .repository_interfaces import RSSRepositoryInterface
 
 import feedparser
-
+import inject
 
 class RSSRepository(RSSRepositoryInterface):
     def fetch_items(self, url: str) -> List[Item]:
