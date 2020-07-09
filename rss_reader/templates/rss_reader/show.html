@@ -1,0 +1,6 @@
+{% for item in feed_items %}
+<div>
+    <p>title: <a href="{{ item.link }}">{{ item.title }}</a></p>
+    <p>updated: {{ item.updated }}</p>
+</div>
+{% endfor %}

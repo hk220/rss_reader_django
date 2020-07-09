@@ -1,0 +1,8 @@
+<form action="{% url 'rss_reader:show' %}" method="post">
+    {% csrf_token %}
+    <div>
+        <label for="feed_url">Feed URL:</label>
+        <input type="url" id="feed_url" name="feed_url">
+    </div>
+    <input type="submit" value="実行">
+</form>
